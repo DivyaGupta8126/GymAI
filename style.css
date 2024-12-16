@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cursive {
+    font-family: cursive;
+}
+
+/* Start of navbar */
+nav {
+    display: flex;
+    padding: 10px 0;
+    background-color: whitesmoke;
+    position: sticky;
+    top: 0;
+}
+
+.nav-left {
+    width: 25%;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    font-family: cursive;
+    transition: all 1s;
+}
+
+.nav-left:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.nav-middle {
+    display: flex;
+    width: 50%;
+    font-family: "Poppins", serif;
+   
+}
+
+.nav-middle a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: all 1s;
+}
+
+.nav-middle a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+.nav-right {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+   
+}
+.nav-right button {
+    transition: all 1s;
+}
+.nav-right button:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.nav-middle ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+.nav-button {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: "Poppins", serif;
+}
+/* End of navbar */
+
+/* Start of Home Section */
+.home {
+    height: 100vh;
+    background-image: url("exercise.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home h1 {
+    margin-top: -1.5em;
+    font-size: 2.6em;
+}
+
+
+
+.home p {
+    font-size: 1.3em;
+    width: 32em;
+    text-align: center;
+}
+
+/* End of Home Section */
+
+/* Start of Features Section */
+.featuresContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+
+}
+
+.featureItem {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(231, 230, 172);
+    border-radius: 20px;
+}
+
+.featureItem img {
+    width: 20em;
+}
+
+.featureItem h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: "Poppins", serif;
+}
+
+.featureItem p {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+#equipment h2 {
+    margin-top: 60px;
+}
+
+#cleanliness h2 {
+    margin-top: 40px;
+}
+
+/* End of Features Section */
+
+/* Start of Workout Section */
+.workout {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin: 5em 0px;
+}
+
+.dayContainer {
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dayContainer img {
+    width: 15em;
+    border-radius: 20px;
+}
+
+.day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+
+#saturday {
+    border-bottom: 0;
+}
+
+.day ul li {
+    margin-top: 10px;
+}
+/* End of Workout Section */
+
+/* Start of Blog Section */
+.blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.blogContainer {
+    display: flex;
+    width: 95%;
+    margin-top: 30px;
+}
+
+.blogItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(231, 230, 172);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.blogItem p {
+    text-align: center;
+}
+
+.blogItem h2 {
+    margin-bottom: 20px;
+    font-family: "Poppins", serif;
+}
+
+.blogItem p {
+    font-size: 1.2em;
+    font-family: "Poppins", serif;
+}
+
+.blogItem .para {
+    margin-bottom: 20px;
+}
+
+#secondBlog {
+    margin: 0 20px;
+}
+/* End of Blog Section */
+
+/* Start of FAQs Section */
+
+.accordion {
+    margin: 5em 0;
+}
+
+.accordion h1 {
+    text-align: center;
+}
+
+.accordionContainer {
+    padding-top: 20px;
+    width: 80%;
+    display: block;
+    margin: 20px auto;
+}
+
+.accordionTitle {
+    font-size: 1.2em;
+}
+
+.accordionItem {
+    padding: 0 20px;
+    padding-top: 20px;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    transition: all 1s;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.accordionContent {
+    display: none;
+}
+
+.accordionItem:hover {
+    background-color: rgb(231, 230, 172);
+}
+
+.accordionItem.active .accordionTitle {
+    font-weight: bold;
+}
+
+.accordionItem.active .accordionContent {
+    display: block;
+   font-size: 1.2em;
+}
+
+/* End of FAQs Section */
+
+/* Start of Contact Section */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:  rgb(231, 230, 172) ;
+    padding: 20px 0;
+}
+
+.contactContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.contactItem {
+width: 30%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.contactItem img {
+    border-radius: 20px;
+}
+
+.contactItem h2 {
+    margin: 20px 0;
+}
+
+.contactItem p {
+    cursor: pointer;
+}
+
+.contactItem p:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+/* End of Contact Section */
+
+/* Responsive */
+@media only screen and (max-width : 420px) {
+
+
+html {
+    font-size: 10px;
+}
+
+.featuresContainer, .contactContainer {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.featuresContainer {
+    padding: 0 20px;
+}
+
+.featureItem {
+    width: 100%;
+    margin: 20px;
+}
+
+.home {
+    height: 30vh;
+        background-size: cover;
+   
+}
+
+.home p {
+    width: 25em;
+}
+
+.blogContainer {
+    flex-direction: column;
+    padding: 10px;
+}
+
+.blogItem {
+    width: 100%;
+}
+
+#secondBlog {
+    margin: 20px 0;
+}
+
+.dayContainer, 
+.accordionContainer {
+    width: 90vw;
+}
+
+.contactItem {
+    width: 100%;
+}
+
+.contactItem img {
+    width: 30%;
+    margin-top: 20px;
+}
+
+.contactItem p {
+   font-size: 1.5em;
+}
+
+ .nav-right {
+    display: none;
+}
+
+nav {
+    flex-direction: column;
+}
+
+.nav-left {
+    width: 100%;
+    text-align: center;
+}
+
+.nav-middle {
+    width: 100%;
+}
+
+.dayContainer h1 {
+    font-size: 1.2em;
+}
+
+.dayContainer ul li {
+    font-size: 1em;
+}
+
+}
